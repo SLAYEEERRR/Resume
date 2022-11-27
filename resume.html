@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek's Resume</title>
+    <link href='https://fonts.googleapis.com/css?family=Arapey' rel='stylesheet'>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 100;
+    }
+
+
+    .container1 {
+        display: flex;
+        justify-content: left;
+        height: 10vh;
+        background-color: rgb(165, 160, 160);
+    }
+
+    .heading {
+        font-family: Garamond;
+        padding-top: 13px;
+        padding-left: 10px;
+        color: black;
+        display: inline-block;
+        background-color: #d9048e;
+        width: 30vw;
+        align-items: center;
+
+
+        justify-content: center;
+    }
+
+    .container1a {
+        color: rgb(61, 59, 59);
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        padding-right: 10px;
+        padding-top: 5px;
+        justify-content: end;
+
+    }
+
+    /* personal details */
+
+
+
+
+
+
+    .pdetails {
+        height: 160px;
+        /* justify-content: flex; */
+        padding-left: 100px;
+        padding-bottom: 20px;
+        display: flex;
+        grid: 30px;
+        background-color: darkslategray;
+        color: #ffffff;
+
+    }
+
+    .mine {
+        display: flex;
+        padding-right: 60px;
+        padding-top: 10px;
+    }
+
+    .aboutme {
+        font-family: "Arapey";
+        font-size: large;
+        padding-top: 20px;
+        width: 70vw;
+    }
+
+
+
+
+
+
+    /* personal details */
+
+    /* .container2 {} */
+
+
+    .container2 {
+        justify-content: center;
+        margin-left: 40px;
+        align-items: center;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        grid-gap: 30px;
+        background-color: beige;
+
+    }
+
+
+    /* 2 flip cards for school and college */
+    /* for collgege */
+    .flip-card {
+        size: 20vh 20vw;
+        float: left;
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 80%;
+        height: 80%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 16px;
+    }
+
+    .flip-card-front {
+        background-image: linear-gradient(45deg, #6f04d9, #d9048e);
+    }
+
+    .flip-card-front img {
+        width: 200px;
+        margin-top: 1rem;
+
+    }
+
+    .flip-card-back {
+        background-image: linear-gradient(315deg, #6f04d9, #8a045c);
+        color: #ffffff;
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-back img {
+        width: 200px;
+        height: 200px;
+        margin-top: 1 rem;
+        align-items: center;
+
+    }
+
+    .flip-card-back h3 {
+        margin-bottom: 0.3rem;
+    }
+
+    /* for college */
+    /* for school */
+    .flip1-card {
+        size: 20vh 20vw;
+        float: left;
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+    }
+
+    .flip1-card-inner {
+        position: relative;
+        width: 80%;
+        height: 80%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    .flip1-card:hover .flip1-card-inner {
+        transform: rotateY(180deg);
+
+    }
+
+    .flip1-card-front,
+    .flip1-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 16px;
+    }
+
+    .flip1-card-front {
+        background-image: linear-gradient(45deg, #6f04d9, #d9048e);
+    }
+
+    .flip1-card-front img {
+        width: 200px;
+        margin-top: 1rem;
+        
+
+    }
+
+    .flip1-card-back {
+        background-image: linear-gradient(315deg, #6f04d9, #8a045c);
+        color: #ffffff;
+        transform: rotateY(180deg);
+    }
+
+    .flip1-card-back img {
+        width: 200px;
+        height: 200px;
+        margin-top: 1 rem;
+
+    }
+
+    .flip1-card-back h3 {
+        margin-bottom: 0.3rem;
+    }
+
+    /* for school */
+    /* 2 flip cards for school and college */
+
+    .contianer2b {
+        /* position: 0 0 1000px ; */
+        margin-right: 300px;
+        justify-content: center;
+        align-items: center;
+        float: right;
+        height: 300px;
+        width: 300px;
+        border-color: black;
+        
+
+    }
+</style>
+
+<body>
+    <!-- This is for heading -->
+    <hr color="#6f04d9" size="5">
+
+    <div class="container1">
+        <div class="heading">
+            <h1>Abhishek Kumar Gupta</h1>
+        </div>
+        <div class="container1a"><b> abhishekkumar.gupta2020@vitstudent.ac.in
+            <br>+91 8181808145<br>
+            Gorakhpur</b>
+        </div>
+    </div>
+    <hr color="#6f04d9" size="5">
+    <!-- my personal details columns goes down here -->
+
+
+
+
+
+
+
+
+
+    <div class="pdetails">
+        <div class="mine">
+            <img src="images\mine.jpg" height="160vh" width="150vw" style="border-radius:20% ">
+        </div>
+        <div class="aboutme">
+            <p>
+                Hey, Everyone!! This is Abhishek and below is my "Resume".I am 21 years old and currently pursuing M.Tech
+                integrated from VIT,Chennai.I have a keen interest in learning new things and also i am a keen
+                learner.New interesting things fascinates me for example,Web Development.I love to sing,play sports like
+                cricket,badminton,table tennis,etc.I got a new hobby right now which is "Coding!"<br>
+                I am from Gorakhpur district,Uttar -Pradesh,which is mostly famous for the "Gorakhnath Temple" and
+                world's second longest railway platform after Hubli Junction railway station.
+            </p>
+        </div>
+
+
+    </div>
+    <hr color="#6f04d9" size="5"><br>
+
+
+
+
+
+
+
+
+    <!-- my personal details columns goes down here -->
+    <!-- This is for heading -->
+    <!-- flip card motions -->
+    <!-- flip-card motion for college -->
+    <div class="container2">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images\education.png">
+                </div>
+                <div class="flip-card-back">
+                    <img src="images\clg.png">
+                    <h3>My college</h3>
+                </div>
+            </div>
+        </div>
+        <!-- flip card motion for college-->
+        <!-- flip card motion for school-->
+        <div class="flip1-card">
+            <div class="flip1-card-inner">
+                <div class="flip1-card-front">
+                    <img src="images\education.png">
+                </div>
+                <div class="flip1-card-back">
+                    <img src="images\school.jpg">
+                    <h3>My School</h3>
+                </div>
+            </div>
+        </div>
+        <!-- flip card motion for school-->
+
+        <div class="container2b">
+
+            <pre>
+           <b>College:-</b> 
+              * <b>Integrated M.Tech, Software Engineering</b>
+                Vellore Institute of Technology
+                2020 - 2025
+              * <b>Bachelor of Science (B.Sc), Data Science And Programming</b>
+                Indian Institute Of Technology Madras
+                2021 - 2024
+           <b> School:-</b> 
+            *<b>   Senior Secondary (XII), Science</b>
+                Little Flower School ,Gida Gorakhpur
+                (CBSE board)
+                Year of completion: 2019
+            *<b>   Secondary (X)</b>
+                Little Flower School , Gida Gorakhpur
+                (CBSE board)
+                Year of completion: 2017
+        </pre>
+
+        </div>
+    </div>
+    </div>
+    <hr color="#6f04d9" size="5"><br>
+    <!-- here goes for the internship -->
+
+    <div class="container2">
+        <div class="flip1-card">
+            <div class="flip1-card-inner">
+                <div class="flip1-card-front">
+                    <img src="images\education.png" alt="INTERNSHIPS">
+                </div>
+                <div class="flip1-card-back">
+                    <img src="images\inernships.jpg">
+                    <h3>INTERNSHIPS</h3>
+                </div>
+            </div>
+        </div>
+        <!-- flip card motion for school-->
+
+        <div class="container2b">
+
+            <pre>
+       <b>INTERNSHIPS:-</b> 
+          * <b>Software Test Engineer        </b>
+            Kwikpic AI Solutions, Virtual
+            (Dabboo Ratnani is the brand ambassador of it)
+            Sep 2022 - Present
+            API,Automated,Manual,Website Testing
+          * <b>QA Engineer        </b>
+            Duckart Company, Virtual
+            Jun 2022 - Aug 2022
+            Performing manual testing
+          * <b>Android App Development</b>
+            Skill Vertex, Virtual
+            Jan 2022 - Present
+       
+    </pre>
+
+        </div>
+    </div>
+
+    </div>
+    <hr color="#6f04d9" size="5"><br>
+    <!-- projects line starts here,as i have used the same layout as used above so i will copy paste the above layout with same class -->
+    <div class="container2">
+        <div class="flip1-card">
+            <div class="flip1-card-inner">
+                <div class="flip1-card-front">
+                    <img src="images\projects.jpg">
+                    <h3>Software Testing,App in JAVA</h3>
+                </div>
+                <div class="flip1-card-back">
+                    <img src="images\payroll.jpg">
+                    <h3>My Projects</h3>
+                </div>
+            </div>
+        </div>
+        <!-- flip card motion for school-->
+
+        <div class="container2b">
+
+            <pre>
+       <b>PROJECTS:-</b> 
+          * <b>ChatVit
+            Sep 2022 - Oct 2022  </b>
+            https://github.com/SLAYEEERRR/ChatVit.
+                           Its an android real-time chatting application build using android studio
+                            and firebase.
+          * <b>ChatBot
+            Sep 2022 - Oct 2022   </b>
+            https://github.com/SLAYEEERRR/Chatbot-for-describing-about-Admission-process.
+                           Its a chatbot build using python and flask that tells about theadmission
+                           procedure for a college.For example if we want toquery about the fees of 
+                           the college it will give me inforegarding it.
+          * <b>Find where you are using latitude and longitude
+            Sep 2022 - Oct 2022   </b>
+            https://github.com/SLAYEEERRR/Find-your-where-you-are-by-enterring-latitude-and-longitude
+                           An android application that takes input a latitude andlongitude and mark it 
+                           up on the map where is it?
+                           I have used google maps apis and android platform to build this application.
+          * <b>Job Portal
+            Jul 2022 - Aug 2022  </b>
+            https://github.com/SLAYEEERRR/Job-Portal
+                           Its a job portal which i developed it using purely HTML andCSS.To give it 
+                           much better feel i have used bootstrap for it.
+          * <b>Simple Calculator
+            Aug 2022 - Aug 2022  </b>
+            https://github.com/SLAYEEERRR/Simple-calculator
+                           Simple android app for simple calculation.
+                                  
+          * <b>Software Testing on Payroll System
+            Apr 2022 - May 2022    </b>
+            https://drive.google.com/file/d/12LP4cBEdnP7xO3Fj9U9GCbLkiZbO-Efu/view?usp=sharing
+                           I have prepared all the architectural diagrams in it ,then later
+                           written all the test plan document, the test cases for each
+                           modules ,then performed a short automated testing on it
+                           using Katalon Software.
+
+          * <b>Payroll proccesssing system(JAVA)
+            Jun 2021 - Dec 2021</b>
+            https://youtu.be/-fosmjlAico
+                           Its a window application that was developed using Netbeans
+                           IDE.The app was payroll processing system where the
+                           employee details,his salary and attendance was maintained.
+       
+    </pre>
+
+</div>
+</div>
+
+</div>
+        <hr color="#6f04d9" size="5"><br>
+        <!-- skills box goes from here -->
+    <div class="container2">
+        <div class="flip1-card">
+            <div class="flip1-card-inner">
+                <div class="flip1-card-front">
+                    <img src="images\skills.jpg">
+                    <h3>Coding languages and frameworks</h3>
+                </div>
+                <div class="flip1-card-back">
+                    <img src="images\coding.png">
+                    <h3>My Projects</h3>
+                </div>
+            </div>
+        </div>
+        <!-- flip card motion -->
+
+        <div class="container2b">
+
+            <pre>
+       <b>SKILLS:-</b> 
+          <b>Python</b>                                                        
+          Intermediate
+          <b>Machine Learning</b>
+          Beginner
+          <b>Java</b>
+          Intermediate
+          <b>C Programming</b>
+          Advanced
+          <b>C++ Programming</b>
+          Intermediate
+          <b>Android</b>
+          Advanced
+          <b>HTML</b>
+          Advanced
+          <b>CSS</b>
+          Advanced
+          <b>PHP</b>
+          Advanced
+          <b>MySQL</b>
+          Advanced
+          <b>JavaScript</b>
+          Intermediate
+          <b>Bootstrap</b>
+          Intermediate
+          <b>XML</b>
+          Intermediate
+          <b>Software Testing</b>
+          Intermediate
+          <b>Manual Testing</b>
+          Intermediate
+          
+          
+    </pre>
+
+</div>
+</div>
+
+</div>
+        <hr color="#6f04d9" size="5"><br>
+        <!-- last container.............more details and work samples -->
+        <div class="container2">
+            <div class="flip1-card">
+                <div class="flip1-card-inner">
+                    <div class="flip1-card-front">
+                        <img src="images\moredetails.jpg">
+                        <h3>Additional Details</h3>
+                    </div>
+                    <div class="flip1-card-back">
+                        <img src="images\worksamples.jpg">
+                        <h3>GIT HUB</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- flip card motion -->
+    
+            <div class="container2b">
+    
+                <pre>
+           <b>WORK SAMPLES:-</b> 
+              * <b>GitHub profile  </b>
+                    https://github.com/SLAYEEERRR
+    
+           <b>ADDITIONAL DETAILS</b>
+
+                <B>-95% in 10th exam :-
+                -12th maths ( 94/100 ),Chem(93/100) & phys (85/100).</B>
+
+                <b>-Android Development Certificate:-</b>
+                  https://olympus1.mygreatlearning.com/course_certificate/HR
+                  NGEEHC    
+  
+                <b>-HTML Certificate:-</b>
+                  https://olympus1.mygreatlearning.com/course_certificate/KE
+                  WBBEFO
+                  
+                <b>-JAVA Certificate:-</b>
+                  https://olympus1.mygreatlearning.com/course_certificate/EPH
+                  TTNAN
+                  
+                <b>-CSS certificate:-</b>
+                  https://olympus1.mygreatlearning.com/course_certificate/ZJI
+                  GZOOU
+                  
+                <b>-JavaScript Certificate:-</b>
+                  https://olympus1.mygreatlearning.com/course_certificate/CO
+                  PXBIZG
+                  
+                <b>-Bootstrap Certificate:-</b>
+                  https://olympus1.mygreatlearning.com/course_certificate/MZJ
+                  AGMBE
+        </pre>  
+    
+    </div>
+    </div>
+    
+    </div>
+            <hr color="#6f04d9" size="5"><br>
+
+
+<footer>
+    <center> &copy;Abhishek's Resume</center>
+    <center>20MIS1180</center>
+    <center>Web Technology</center>
+    <center>DA 1</center>
+   
+</footer>
+<hr color="#6f04d9" size="5">
+</body>
+
+</html>

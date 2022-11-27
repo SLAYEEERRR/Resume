@@ -1,0 +1,1 @@
+I have only used HTML and CSS solely for designing my resume.Mostly flexbox,transform,grids,etc things of CSS have been used.
